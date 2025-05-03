@@ -1,0 +1,66 @@
+prd:
+  catalog_name: mlops_prod
+  schema_name: house_prices
+  pipeline_id: 1818db79-f551-49bb-ad4f-f61cac9d91fc
+acc:
+  catalog_name: mlops_acc
+  schema_name: house_prices
+  pipeline_id: 94748db79-f551-49bb-ad4f-f61cac9d91fc
+dev:
+  catalog_name: dev
+  schema_name: acikgozm_c3
+  pipeline_id: 0498db79-f551-49bb-ad4f-finac9d91fc
+
+
+experiment_name_basic: /Shared/house-prices-basic
+experiment_name_custom: /Shared/house-prices-custom
+experiment_name_fe: /Shared/house-prices-fe
+
+parameters:
+  learning_rate: 0.01
+  n_estimators: 1000
+  max_depth: 6
+
+parameters_a:
+  learning_rate: 0.01
+  n_estimators: 1000
+  max_depth: 6
+
+parameters_b:
+  learning_rate: 0.02
+  n_estimators: 1000
+  max_depth: 5
+
+num_features:
+  - LotFrontage
+  - LotArea
+  - OverallQual
+  - OverallCond
+  - YearBuilt
+  - YearRemodAdd
+  - MasVnrArea
+  - TotalBsmtSF
+  - GrLivArea
+  - GarageCars
+
+cat_features:
+  - MSZoning
+  - Street
+  - Alley
+  - LotShape
+  - LandContour
+  - Neighborhood
+  - Condition1
+  - BldgType
+  - HouseStyle
+  - RoofStyle
+  - Exterior1st
+  - Exterior2nd
+  - MasVnrType
+  - Foundation
+  - Heating
+  - CentralAir
+  - SaleType
+  - SaleCondition
+
+target: SalePrice

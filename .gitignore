@@ -1,0 +1,53 @@
+.vscode/*
+.databricks
+uv.lock
+.devcontainer
+.DS_Store
+src/*.egg-info
+src/house_price/__pycache__/
+src/house_price/models/__pycache__/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+.env/
+*.env
+*.venv
+
+# Logs and debug
+logs/
+*.log
+debug.log
+
+
+# MLflow artifacts and experiment tracking
+mlruns/
+mlflow.db
+
+# Databricks-specific files
+.dbx/
+databricks/
+workspace/
+
+# IDE / Editor settings
+.vscode/
+.idea/
+
+# Python package files
+dist/
+build/
+*.egg-info/
+pip-wheel-metadata/
+
+
+# Custom files
+Makefile
+**/*.whl
+.Mehmet
