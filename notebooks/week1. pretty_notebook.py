@@ -6,27 +6,24 @@
 # MAGIC %restart_python
 
 # COMMAND ----------
-
-# import logging
 from loguru import logger
-
 import yaml
+import sys
 from pyspark.sql import SparkSession
 
 from house_price.config import ProjectConfig
 from house_price.data_processor import DataProcessor
 
-# Configure logging
-# logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
-# logger = logging.getLogger(__name__)
+
+logger.remove()  # Remove default handler
+logger.add(sys.stdout, level="INFO")  # Add handler to stdout
 
 config = ProjectConfig.from_yaml(config_path="../project_config.yml", env="dev")
 
-# logger.info("Configuration loaded:")
-# logger.info(yaml.dump(config, default_flow_style=False))
 logger.info("Configuration loaded:")
 logger.info(yaml.dump(config, default_flow_style=False))
 
+print("config", config)
 # COMMAND ----------
 
 # Load the house prices dataset
@@ -35,6 +32,7 @@ spark = SparkSession.builder.getOrCreate()
 df = spark.read.csv(
     f"/Volumes/{config.catalog_name}/{config.schema_name}/data/data.csv", header=True, inferSchema=True
 ).toPandas()
+
 
 # COMMAND ----------
 
@@ -59,3 +57,4 @@ data_processor.save_to_catalog(X_train, X_test)
 # Enable change data feed (only once!)
 logger.info("Enable change data feed")
 data_processor.enable_change_data_feed()
+# COMMAND ----------

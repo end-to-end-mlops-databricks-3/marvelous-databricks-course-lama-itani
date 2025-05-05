@@ -50,4 +50,5 @@ pip-wheel-metadata/
 # Custom files
 Makefile
 **/*.whl
-.Mehmet
+
+.databricks
