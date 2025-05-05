@@ -17,7 +17,8 @@ dependencies = ["mlflow==2.17.0",
                 "databricks-feature-lookup==1.2.0",
                 "databricks-sdk==0.32.0",
                 "pydantic==2.9.2",
-                "loguru==0.7.3"
+                "loguru==0.7.3",
+                "marvelous @ git+https://x-access-token:${GIT_TOKEN}@github.com/end-to-end-mlops-databricks-3/marvelous.git@main"
                 ]
 
 dynamic = ['version']
@@ -49,7 +50,6 @@ include = ["house_price*"]
 version = { file = "version.txt" }
 
 [tool.pytest.ini_options]
-addopts = "-s --no-header --no-summary"
 testpaths = [ "tests" ]
 pythonpath = [ "." ]
 
