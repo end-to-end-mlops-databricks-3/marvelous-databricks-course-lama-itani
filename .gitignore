@@ -48,7 +48,9 @@ pip-wheel-metadata/
 
 
 # Custom files
-Makefile
 **/*.whl
 
 .databricks
+
+test-reports
+.coverage

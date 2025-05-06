@@ -9,33 +9,15 @@ from house_price.data_processor import DataProcessor, generate_synthetic_data
 from marvelous.logging import setup_logging
 from marvelous.timer import Timer
 
-setup_logging()
+config_path = f"../project_config.yml"
 
-parser = argparse.ArgumentParser()
-parser.add_argument(
-    "--root_path",
-    action="store",
-    default=None,
-    type=str,
-    required=True,
-)
+config = ProjectConfig.from_yaml(config_path=config_path, env="dev")
 
-parser.add_argument(
-    "--env",
-    action="store",
-    default=None,
-    type=str,
-    required=True,
-)
-
-args = parser.parse_args()
-root_path = args.root_path
-config_path = f"{root_path}/files/project_config.yml"
-
-config = ProjectConfig.from_yaml(config_path=config_path, env=args.env)
+setup_logging(log_file=f"/Volumes/{config.catalog_name}/{config.schema_name}/logs/marvelous-1.log")
 
 logger.info("Configuration loaded:")
 logger.info(yaml.dump(config, default_flow_style=False))
+
 
 # Load the house prices dataset
 spark = SparkSession.builder.getOrCreate()
@@ -48,6 +30,7 @@ df = spark.read.csv(
 with Timer() as preprocess_timer:
     data_processor = DataProcessor(df, config, spark)
     data_processor.preprocess()
+
 logger.info(f"Data preprocessing: {preprocess_timer}")
 
 # Split the data

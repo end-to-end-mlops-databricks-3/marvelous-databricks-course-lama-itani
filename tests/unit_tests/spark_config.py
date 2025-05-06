@@ -1,8 +1,6 @@
 """Spark Configuration module for local testing."""
 
-from pydantic_settings import BaseSettings, SettingsConfigDict
-
-from house_price import PROJECT_DIR
+from pydantic_settings import BaseSettings
 
 
 class SparkConfig(BaseSettings):

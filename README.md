@@ -18,7 +18,7 @@ In our examples, we use UV. Check out the documentation on how to install it: ht
 
 ### 🔐 Accessing private GitHub dependencies
 
-This project depends on a private repository called `marvelous`.  
+This project depends on a private repository called `marvelous`.
 The source is configured in `pyproject.toml` like this:
 
 ```toml
@@ -51,4 +51,3 @@ uv sync --extra dev
 Using the [**House Price Dataset**](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data) from Kaggle.
 
 This data can be used to build a classification model to calculate house price.
-

@@ -10,6 +10,7 @@ from loguru import logger
 import yaml
 import sys
 from pyspark.sql import SparkSession
+import pandas as pd
 
 from house_price.config import ProjectConfig
 from house_price.data_processor import DataProcessor
@@ -18,7 +19,7 @@ from marvelous.timer import Timer
 
 config = ProjectConfig.from_yaml(config_path="../project_config.yml", env="dev")
 
-setup_logging()
+setup_logging(log_file="logs/marvelous-1.log")
 
 logger.info("Configuration loaded:")
 logger.info(yaml.dump(config, default_flow_style=False))
@@ -28,9 +29,10 @@ logger.info(yaml.dump(config, default_flow_style=False))
 # Load the house prices dataset
 spark = SparkSession.builder.getOrCreate()
 
-df = spark.read.csv(
-    f"/Volumes/{config.catalog_name}/{config.schema_name}/data/data.csv", header=True, inferSchema=True
-).toPandas()
+filepath = "../data/data.csv"
+
+# Load the data
+df = pd.read_csv(filepath)
 
 
 # COMMAND ----------
