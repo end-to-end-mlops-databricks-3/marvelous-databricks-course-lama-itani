@@ -2,7 +2,7 @@ version: '3'
 dotenv: [.env]
 
 vars:
-  PACKAGE_IMPORT_NAME: mlops_course
+  PACKAGE_IMPORT_NAME: house_price
   PYTHON_VERSION: 3.11
 
 tasks:
