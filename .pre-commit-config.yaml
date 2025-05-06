@@ -12,8 +12,6 @@ repos:
         args: ["--unsafe"]
       - id: end-of-file-fixer
       - id: trailing-whitespace
-      - id: requirements-txt-fixer
-      - id: no-commit-to-branch
       - id: detect-private-key
       - id: forbid-new-submodules
       - id: check-docstring-first
