@@ -1,29 +1,41 @@
-# Databricks notebook source
-# MAGIC %pip install /Volumes/dev/acikgozm_c3/packages/house_price-latest-py3-none-any.whl
+import argparse
 
-# COMMAND ----------
-
-# MAGIC %restart_python
-
-# COMMAND ----------
-from loguru import logger
 import yaml
-import sys
+from loguru import logger
 from pyspark.sql import SparkSession
 
 from house_price.config import ProjectConfig
-from house_price.data_processor import DataProcessor
+from house_price.data_processor import DataProcessor, generate_synthetic_data
 from marvelous.logging import setup_logging
 from marvelous.timer import Timer
 
-config = ProjectConfig.from_yaml(config_path="../project_config.yml", env="dev")
-
 setup_logging()
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--root_path",
+    action="store",
+    default=None,
+    type=str,
+    required=True,
+)
+
+parser.add_argument(
+    "--env",
+    action="store",
+    default=None,
+    type=str,
+    required=True,
+)
+
+args = parser.parse_args()
+root_path = args.root_path
+config_path = f"{root_path}/files/project_config.yml"
+
+config = ProjectConfig.from_yaml(config_path=config_path, env=args.env)
 
 logger.info("Configuration loaded:")
 logger.info(yaml.dump(config, default_flow_style=False))
-
-# COMMAND ----------
 
 # Load the house prices dataset
 spark = SparkSession.builder.getOrCreate()
@@ -32,31 +44,17 @@ df = spark.read.csv(
     f"/Volumes/{config.catalog_name}/{config.schema_name}/data/data.csv", header=True, inferSchema=True
 ).toPandas()
 
-
-# COMMAND ----------
-# Load the house prices dataset
+# Preprocess the data
 with Timer() as preprocess_timer:
-    # Initialize DataProcessor
     data_processor = DataProcessor(df, config, spark)
-
-    # Preprocess the data
     data_processor.preprocess()
-
 logger.info(f"Data preprocessing: {preprocess_timer}")
-
-# COMMAND ----------
 
 # Split the data
 X_train, X_test = data_processor.split_data()
 logger.info("Training set shape: %s", X_train.shape)
 logger.info("Test set shape: %s", X_test.shape)
 
-# COMMAND ----------
 # Save to catalog
 logger.info("Saving data to catalog")
 data_processor.save_to_catalog(X_train, X_test)
-
-# Enable change data feed (only once!)
-logger.info("Enable change data feed")
-data_processor.enable_change_data_feed()
-# COMMAND ----------
