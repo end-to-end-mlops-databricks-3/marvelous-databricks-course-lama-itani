@@ -1,0 +1,85 @@
+[project]
+name = "mlops-course"
+description = "MLOps with Databricks course"
+requires-python = ">=3.11, <3.12"
+dependencies = ["mlflow==2.17.0",
+                "cffi==1.17.1",
+                "cloudpickle==3.1.0",
+                "matplotlib==3.9.2",
+                "numpy==1.26.4",
+                "pandas==2.2.3",
+                "psutil==6.0.0",
+                "pyarrow==14.0.1",
+                "scikit-learn==1.5.2",
+                "lightgbm==4.5.0",
+                "scipy==1.14.1",
+                "databricks-feature-engineering==0.6",
+                "databricks-feature-lookup==1.2.0",
+                "databricks-sdk==0.32.0",
+                "pydantic==2.9.2",
+                "loguru==0.7.3",
+                "marvelous",
+                ]
+
+dynamic = ['version']
+
+[tool.uv.sources]
+marvelous = {git = "https://${GIT_TOKEN}@github.com/end-to-end-mlops-databricks-3/marvelous.git", rev="0.1.0"}
+
+[project.optional-dependencies]
+dev = ["databricks-connect==15.4.5",
+       "ipykernel>=6.29.5, <7",
+       "pip>=24.2",
+       "pre-commit>=4.1.0, <5",
+       "pytest>=8.3.4, <9",             # Added by MA
+    ]
+test = [
+    "delta-spark==3.3.0",
+    "pyspark==3.5.3",
+    "pytest>=8.3.5",
+]
+
+[build-system]
+requires = ["setuptools>=72.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where =["src"]
+include = ["mlops_course*"]
+
+[tool.setuptools.dynamic]
+version = { file = "version.txt" }
+
+[tool.pytest.ini_options]
+testpaths = [ "tests" ]
+pythonpath = [ "." ]
+
+# [lint.pydocstyle]
+# convention = "sphinx"
+
+[tool.ruff]
+line-length = 120
+lint.select = [
+    "F",    # pyflakes rules
+    "E",    # pycodestyle error rules
+    "W",    # pycodestyle warning rules
+    "B",    # flake8-bugbear rules
+    "I",    # isort rules
+    "UP",   # pyupgrade rules
+    "SIM",  # flake8-simplify rules
+    "ERA",  # eradicate rules
+    "C",    # pylint convention rules
+    "D",    # pydocstyle rules
+    "ANN"   # flake8-annotations rules
+]
+lint.ignore = [
+    "D107", # Missing docstring in `__init__`
+    "D203", # incorrect-blank-line-before-class
+    "D213", # multi-line-summary-second-line
+    "E501", # line-too-long
+    "C901", # too complex
+]
+
+[tool.ruff.format]
+indent-style = "space"
+docstring-code-format = true
