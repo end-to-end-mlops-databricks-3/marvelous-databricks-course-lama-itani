@@ -1,6 +1,5 @@
 # Databricks notebook source
-# MAGIC %pip install /Volumes/dev/acikgozm_c3/packages/house_price-latest-py3-none-any.whl
-
+# MAGIC %pip install /Volumes/mlops_prd/utils/package/house_price-1.0.0-py3-none-any.whl
 # COMMAND ----------
 
 # MAGIC %restart_python
