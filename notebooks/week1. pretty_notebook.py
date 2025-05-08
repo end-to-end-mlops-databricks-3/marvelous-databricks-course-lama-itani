@@ -1,8 +1,11 @@
 # Databricks notebook source
-# MAGIC %pip install /Volumes/mlops_prd/utils/package/house_price-1.0.0-py3-none-any.whl
-# COMMAND ----------
 
-# MAGIC %restart_python
+# % pip install -e ..
+# %restart_python
+
+# from pathlib import Path
+# import sys
+# sys.path.append(str(Path.cwd().parent / 'src'))
 
 # COMMAND ----------
 from loguru import logger

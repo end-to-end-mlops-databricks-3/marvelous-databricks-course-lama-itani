@@ -1,5 +1,5 @@
 prd:
-  catalog_name: mlops_prod
+  catalog_name: mlops_prd
   schema_name: house_prices
 acc:
   catalog_name: mlops_acc
