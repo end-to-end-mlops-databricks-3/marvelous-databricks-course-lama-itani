@@ -1,0 +1,81 @@
+MSZoning,Street,Alley,LotShape,LandContour,Neighborhood,Condition1,BldgType,HouseStyle,RoofStyle,Exterior1st,Exterior2nd,MasVnrType,Foundation,Heating,CentralAir,SaleType,SaleCondition,LotFrontage,LotArea,OverallQual,OverallCond,YearBuilt,YearRemodAdd,MasVnrArea,TotalBsmtSF,GrLivArea,GarageCars,SalePrice,Id
+RL,Pave,,IR1,Lvl,CollgCr,Norm,1Fam,2Story,Gable,VinylSd,VinylSd,BrkFace,PConc,GasA,Y,WD,Abnorml,68.0,9179,7,5,1999,1999,158.0,873,1790,2,193000,1367
+RM,Pave,Grvl,Reg,Lvl,OldTown,Norm,1Fam,2Story,Gable,AsbShng,Stucco,None,BrkTil,GasW,N,WD,Normal,60.0,9600,4,2,1900,1950,0.0,1095,1774,3,87000,677
+FV,Pave,Pave,Reg,Lvl,Somerst,Norm,Twnhs,2Story,Gable,MetalSd,MetalSd,BrkFace,PConc,GasA,Y,WD,Abnorml,24.0,2645,8,5,1999,2000,456.0,970,1739,2,172500,57
+RL,Pave,,Reg,Lvl,Sawyer,Feedr,1Fam,1Story,Gable,HdBoard,HdBoard,None,CBlock,GasA,Y,WD,Normal,75.0,7500,5,5,1963,1963,0.0,1040,1040,1,133000,1082
+FV,Pave,,Reg,Lvl,Somerst,Norm,1Fam,2Story,Gable,VinylSd,VinylSd,None,PConc,GasA,Y,New,Partial,72.0,8640,7,5,2009,2009,0.0,900,1852,2,252678,213
+RL,Pave,,IR1,Lvl,CollgCr,Norm,1Fam,1Story,Gable,VinylSd,VinylSd,BrkFace,PConc,GasA,Y,WD,Normal,88.0,12803,7,5,2002,2002,99.0,1494,1494,2,221000,605
+RL,Pave,,IR1,Lvl,NAmes,Norm,1Fam,1Story,Gable,Wd Sdng,Wd Sdng,BrkFace,CBlock,GasA,Y,WD,Normal,67.0952380952381,17600,6,5,1960,1960,30.0,1478,1478,2,157500,348
+RL,Pave,,Reg,Lvl,Edwards,Norm,1Fam,1Story,Gable,VinylSd,VinylSd,None,PConc,GasA,Y,WD,Normal,83.0,10420,6,5,2009,2009,0.0,1212,1212,2,186000,212
+RL,Pave,,Reg,Lvl,CollgCr,Norm,1Fam,1Story,Hip,VinylSd,VinylSd,None,PConc,GasA,Y,WD,Normal,70.0,9100,7,5,2004,2005,0.0,1860,1836,2,216837,769
+RL,Pave,,IR1,Lvl,NPkVill,Norm,TwnhsE,1Story,Gable,Plywood,Plywood,None,CBlock,GasA,Y,WD,Normal,67.0952380952381,4928,6,5,1976,1976,0.0,1078,958,2,128000,127
+RL,Pave,,Reg,Lvl,NPkVill,Norm,TwnhsE,2Story,Gable,Plywood,Brk Cmn,None,CBlock,GasA,Y,WD,Normal,24.0,2308,6,5,1974,1974,0.0,855,1322,2,147000,505
+RL,Pave,,Reg,Lvl,Sawyer,Feedr,1Fam,1Story,Gable,VinylSd,VinylSd,None,CBlock,GasA,Y,WD,Normal,85.0,6970,4,5,1961,1961,0.0,1040,1120,2,129000,868
+RL,Pave,,Reg,Lvl,NWAmes,PosA,1Fam,2Story,Mansard,WdShing,Plywood,None,CBlock,GasA,Y,WD,Normal,92.0,11952,7,6,1977,1977,0.0,808,1969,2,190000,472
+RM,Pave,,Reg,Lvl,MeadowV,Norm,Twnhs,2Story,Gable,CemntBd,CmentBd,None,CBlock,GasA,Y,WD,Normal,21.0,1533,4,6,1970,2008,0.0,546,1344,0,97000,1039
+RM,Pave,,Reg,Lvl,MeadowV,Norm,TwnhsE,2Story,Gable,CemntBd,CmentBd,None,CBlock,GasA,Y,WD,Normal,21.0,2217,4,4,1970,1970,0.0,546,1092,1,88000,1008
+RL,Pave,,IR3,Lvl,NAmes,PosN,1Fam,1Story,Gable,Plywood,Plywood,None,CBlock,GasA,Y,WD,Normal,67.0952380952381,12155,6,3,1970,1970,0.0,1657,1657,2,163500,1007
+RL,Pave,,IR1,Lvl,SawyerW,Norm,1Fam,SFoyer,Gable,HdBoard,HdBoard,None,CBlock,GasA,Y,WD,Normal,67.0952380952381,9180,5,7,1983,1983,0.0,840,884,2,144000,43
+RL,Pave,,IR1,Lvl,Gilbert,Norm,1Fam,2Story,Gable,VinylSd,VinylSd,None,PConc,GasA,Y,WD,Normal,59.0,7837,6,7,1993,1994,0.0,799,1571,2,178000,1067
+RL,Pave,,Reg,Lvl,NAmes,Norm,1Fam,1Story,Gable,HdBoard,HdBoard,None,CBlock,GasA,Y,WD,Normal,60.0,12144,5,7,1949,1950,0.0,832,1268,1,133000,874
+RL,Pave,,Reg,Lvl,NridgHt,Norm,Twnhs,1Story,Gable,VinylSd,VinylSd,Stone,PConc,GasA,Y,WD,Normal,34.0,4590,8,5,2006,2006,108.0,1554,1554,2,209500,632
+RL,Pave,,IR1,Lvl,NridgHt,Norm,1Fam,1Story,Gable,VinylSd,VinylSd,Stone,PConc,GasA,Y,WD,Normal,98.0,11428,8,5,2006,2006,248.0,1626,1634,3,250000,469
+FV,Pave,Pave,Reg,Lvl,Somerst,Norm,TwnhsE,2Story,Gable,VinylSd,VinylSd,Stone,PConc,GasA,Y,New,Partial,30.0,3000,6,5,2009,2009,76.0,612,1224,2,173733,915
+RL,Pave,,Reg,Bnk,Crawfor,Norm,1Fam,2Story,Hip,BrkFace,BrkFace,None,CBlock,GasA,Y,WD,Normal,70.0,10570,8,8,1932,1994,0.0,853,2727,2,315000,191
+RL,Pave,,Reg,Lvl,Timber,Norm,1Fam,SLvl,Gable,VinylSd,VinylSd,None,PConc,GasA,Y,WD,Normal,73.0,9735,5,5,2006,2007,0.0,384,1394,2,167500,1380
+RL,Pave,,IR1,Lvl,Mitchel,Norm,1Fam,1.5Fin,Gable,VinylSd,VinylSd,None,PConc,GasA,Y,WD,Abnorml,48.0,12822,7,5,2003,2003,0.0,1434,2149,2,239686,47
+RL,Pave,,Reg,Lvl,SawyerW,Norm,1Fam,1Story,Gable,VinylSd,VinylSd,BrkFace,PConc,GasA,Y,WD,Normal,63.0,7500,7,5,2004,2005,120.0,1080,1080,0,141000,149
+RL,Pave,,IR2,Lvl,NWAmes,PosN,1Fam,1Story,Hip,BrkFace,HdBoard,None,CBlock,GasA,Y,WD,Normal,67.0952380952381,20781,7,7,1968,2003,0.0,1568,2156,2,262500,1347
+RL,Pave,,Reg,Bnk,SawyerW,Norm,Duplex,1Story,Gable,HdBoard,HdBoard,None,Slab,GasA,Y,WD,Alloca,64.0,7018,5,5,1979,1979,0.0,0,1535,2,118964,103
+RL,Pave,,Reg,Lvl,Edwards,Feedr,1Fam,1.5Fin,Gambrel,Wd Sdng,VinylSd,None,PConc,GasA,Y,WD,AdjLand,58.0,8410,5,3,1910,1996,0.0,658,1184,0,81000,387
+RL,Pave,,IR1,Lvl,NoRidge,Norm,1Fam,2Story,Gable,VinylSd,VinylSd,BrkFace,PConc,GasA,Y,WD,Normal,92.0,11764,8,7,1999,2007,348.0,1152,2270,3,290000,273
+RL,Pave,,Reg,Bnk,SWISU,Norm,1Fam,2Story,Gable,Wd Sdng,Wd Sdng,None,PConc,GasA,N,WD,Normal,66.0,6858,6,4,1915,1950,0.0,806,1647,1,128000,566
+RL,Pave,,Reg,Lvl,Sawyer,Norm,1Fam,1Story,Hip,HdBoard,HdBoard,None,CBlock,GasA,Y,WD,Normal,80.0,8480,5,6,1963,1963,0.0,970,970,2,132500,476
+RL,Pave,,Reg,Lvl,NWAmes,Norm,1Fam,SLvl,Hip,HdBoard,HdBoard,BrkFace,CBlock,GasA,Y,WD,Normal,80.0,11584,7,6,1979,1979,96.0,539,1725,2,197000,1440
+RL,Pave,,Reg,Lvl,Mitchel,Norm,1Fam,1Story,Gable,Plywood,Plywood,None,CBlock,GasA,Y,WD,Normal,75.0,10125,6,6,1977,1977,0.0,1196,1279,2,171500,202
+RL,Pave,,IR1,Lvl,NWAmes,Norm,1Fam,1Story,Gable,Plywood,Plywood,BrkFace,PConc,GasA,Y,WD,Normal,67.0952380952381,10603,6,7,1977,2001,28.0,1610,1610,2,205000,101
+RL,Pave,,Reg,Lvl,CollgCr,Norm,1Fam,1Story,Gable,VinylSd,VinylSd,BrkFace,PConc,GasA,Y,WD,Normal,70.0,8400,7,5,2004,2005,109.0,1473,1484,2,213000,705
+RL,Pave,,Reg,Lvl,NWAmes,Norm,1Fam,1Story,Gable,Plywood,Plywood,BrkFace,CBlock,GasA,Y,WD,Normal,80.0,9650,6,5,1977,1977,360.0,1350,1334,2,167900,1336
+RL,Pave,,Reg,Lvl,Edwards,Norm,1Fam,1.5Fin,Gable,MetalSd,MetalSd,None,BrkTil,GasA,N,WD,AdjLand,60.0,8160,5,6,1940,1950,0.0,756,1134,1,126000,419
+RL,Pave,,IR1,Bnk,ClearCr,Norm,1Fam,1.5Fin,Gable,MetalSd,MetalSd,None,CBlock,GasA,Y,WD,Normal,138.0,18030,5,6,1946,1994,0.0,1598,3086,0,200500,1174
+RL,Pave,,IR1,Lvl,NAmes,Norm,1Fam,2Story,Gable,VinylSd,VinylSd,Stone,CBlock,GasA,Y,WD,Normal,67.0952380952381,13700,7,6,1965,1988,288.0,864,1820,2,201800,1155
+RL,Pave,,IR1,Lvl,CollgCr,Norm,1Fam,2Story,Gable,VinylSd,VinylSd,None,PConc,GasA,Y,New,Partial,85.0,11103,7,5,2006,2006,0.0,728,1456,2,155835,1345
+FV,Pave,,IR1,Lvl,Somerst,Norm,1Fam,1Story,Gable,VinylSd,VinylSd,None,PConc,GasA,Y,New,Partial,75.0,7862,6,5,2009,2009,0.0,1218,1218,2,208300,508
+RL,Pave,,IR1,Lvl,CollgCr,Norm,1Fam,2Story,Gable,VinylSd,VinylSd,BrkFace,PConc,GasA,Y,WD,Normal,44.0,9548,7,6,2003,2003,223.0,941,1829,2,237000,833
+RL,Pave,,IR1,Lvl,Veenker,Norm,TwnhsE,1Story,Hip,BrkFace,BrkFace,None,PConc,GasA,Y,WD,Normal,30.0,9549,8,5,1995,1996,0.0,1494,1494,2,270000,765
+RM,Pave,,Reg,Lvl,MeadowV,Norm,TwnhsE,2Story,Gable,CemntBd,CmentBd,None,PConc,GasA,Y,WD,Normal,67.0952380952381,2665,5,6,1976,1976,0.0,264,1304,1,115000,491
+RL,Pave,,Reg,Low,NoRidge,Norm,1Fam,2Story,Gable,HdBoard,HdBoard,BrkFace,PConc,GasA,Y,WD,Normal,90.0,9900,7,5,1993,1993,256.0,1347,2646,3,260000,319
+RL,Pave,,IR1,Low,ClearCr,Norm,1Fam,SLvl,Flat,Plywood,Plywood,None,CBlock,GasA,Y,WD,Normal,67.0952380952381,21453,6,5,1969,1969,0.0,938,988,2,180000,121
+RM,Pave,,Reg,Lvl,OldTown,Norm,1Fam,1Story,Gable,MetalSd,MetalSd,None,CBlock,GasA,Y,WD,Normal,100.0,12000,5,7,1948,2005,0.0,924,1122,2,147000,1309
+RL,Pave,,IR1,Lvl,Gilbert,Norm,1Fam,2Story,Gable,MetalSd,MetalSd,None,PConc,GasA,Y,WD,Normal,67.0952380952381,10832,7,5,1994,1996,0.0,712,1895,2,194500,795
+RL,Pave,,IR1,Lvl,NridgHt,Norm,Twnhs,1Story,Gable,VinylSd,VinylSd,Stone,PConc,GasA,Y,WD,Normal,34.0,5381,6,5,2005,2005,135.0,1306,1306,2,196000,1043
+RL,Pave,,Reg,Lvl,CollgCr,Norm,1Fam,1Story,Gable,VinylSd,VinylSd,BrkFace,PConc,GasA,Y,WD,Normal,75.0,9750,7,5,2000,2001,171.0,1630,1630,2,213000,1204
+RL,Pave,,Reg,Lvl,Edwards,Norm,Duplex,1Story,Hip,AsphShn,AsphShn,None,CBlock,GasA,N,WD,Normal,75.0,9825,5,5,1965,1965,0.0,0,1664,0,100000,1012
+RL,Pave,,Reg,Lvl,CollgCr,Norm,1Fam,2Story,Gable,VinylSd,VinylSd,BrkFace,PConc,GasA,Y,WD,Normal,80.0,12435,7,5,2001,2001,172.0,963,1792,2,231500,259
+RL,Pave,,IR1,Lvl,NAmes,Norm,1Fam,1Story,Gable,WdShing,Wd Shng,None,CBlock,GasA,Y,WD,Normal,73.0,7100,5,7,1957,1957,0.0,816,816,1,129900,1113
+RL,Pave,,Reg,Lvl,Gilbert,Norm,1Fam,2Story,Gable,HdBoard,HdBoard,None,PConc,GasA,Y,WD,Normal,65.0,8125,6,5,1994,1995,0.0,702,1481,2,174000,858
+RL,Pave,,Reg,Lvl,NAmes,Norm,1Fam,2Story,Gable,HdBoard,HdBoard,BrkFace,CBlock,GasA,Y,WD,Normal,80.0,9760,6,6,1964,1964,360.0,780,1611,2,167900,1068
+RL,Pave,,Reg,Lvl,NoRidge,Norm,1Fam,2Story,Gable,VinylSd,VinylSd,BrkFace,PConc,GasA,Y,WD,Normal,80.0,9200,8,5,1998,1998,473.0,1470,2630,3,315000,424
+RM,Pave,,IR1,HLS,OldTown,Feedr,1Fam,1Story,Gable,MetalSd,MetalSd,None,CBlock,GasA,Y,WD,Normal,49.0,8235,5,7,1955,1995,0.0,825,825,2,125000,549
+RL,Pave,,IR1,Lvl,CollgCr,Norm,1Fam,1Story,Gable,VinylSd,VinylSd,None,PConc,GasA,Y,WD,Normal,79.0,9236,6,5,1997,1997,0.0,1479,1494,2,217000,753
+RL,Pave,,Reg,Lvl,ClearCr,Norm,1Fam,1.5Fin,Gable,BrkFace,AsbShng,None,CBlock,GasW,Y,WD,Normal,81.0,15593,7,4,1953,1953,0.0,1304,2287,2,225000,70
+RL,Pave,,IR1,Lvl,Gilbert,Norm,1Fam,2Story,Gable,HdBoard,HdBoard,BrkFace,PConc,GasA,Y,WD,Normal,67.0952380952381,13006,7,5,1997,1997,285.0,964,2236,2,222000,930
+RL,Pave,,IR1,Lvl,Gilbert,RRAn,1Fam,2Story,Gable,VinylSd,VinylSd,None,PConc,GasA,Y,WD,Normal,60.0,15384,7,5,2004,2005,0.0,788,1490,2,184000,1225
+RL,Pave,,Reg,Lvl,SawyerW,RRAe,1Fam,1Story,Gable,VinylSd,VinylSd,None,PConc,GasA,Y,WD,Abnorml,63.0,13072,6,5,2005,2005,0.0,1141,1141,2,142500,1239
+RL,Pave,,IR2,Lvl,Somerst,RRAn,1Fam,1Story,Gable,VinylSd,VinylSd,None,PConc,GasA,Y,New,Partial,49.0,20896,8,5,2005,2006,0.0,2077,2097,3,423000,665
+RL,Pave,,Reg,Low,ClearCr,Norm,1Fam,1Story,Shed,Plywood,Plywood,None,PConc,GasA,Y,WD,Normal,67.0952380952381,23595,7,6,1979,1979,0.0,1332,1524,2,260000,1271
+RL,Pave,,Reg,Lvl,NWAmes,Norm,1Fam,1Story,Hip,HdBoard,HdBoard,BrkFace,CBlock,GasA,Y,COD,Normal,80.0,9600,7,5,1969,1969,168.0,1164,1164,2,140000,702
+RL,Pave,,Reg,Lvl,Edwards,Norm,1Fam,1Story,Hip,Wd Sdng,Wd Sdng,None,CBlock,GasA,Y,COD,Normal,73.0,9855,6,5,1956,1956,0.0,1436,1689,2,127500,446
+RL,Pave,,Reg,Lvl,SWISU,Feedr,1Fam,1.5Fin,Gable,Wd Sdng,Wd Shng,None,PConc,GasA,Y,WD,Normal,50.0,9638,6,7,1919,1990,0.0,804,2447,1,169000,1285
+RL,Pave,,Reg,Lvl,NWAmes,Norm,1Fam,1Story,Gable,Plywood,Plywood,Stone,CBlock,GasA,Y,WD,Normal,85.0,13175,6,6,1978,1988,119.0,1542,2073,2,210000,1457
+RL,Pave,,Reg,Lvl,Somerst,Norm,1Fam,1Story,Hip,VinylSd,VinylSd,Stone,PConc,GasA,Y,New,Partial,83.0,9849,7,6,2007,2007,0.0,1689,1689,3,248328,1242
+RL,Pave,,IR1,Lvl,NWAmes,Feedr,Duplex,1Story,Gable,Plywood,Plywood,BrkFace,CBlock,GasA,Y,WD,Normal,87.0,9246,5,5,1973,1973,564.0,1656,1656,2,135000,1337
+RL,Pave,,Reg,HLS,Crawfor,Norm,1Fam,2Story,Gable,BrkFace,Wd Sdng,None,PConc,GasA,Y,WD,Alloca,78.0,12168,8,6,1934,1998,0.0,965,3194,2,359100,609
+RL,Pave,,IR2,Lvl,Veenker,Norm,TwnhsE,1Story,Gable,BrkFace,BrkFace,None,PConc,GasA,Y,WD,Normal,38.0,14963,8,5,1996,1996,0.0,1260,1288,2,245500,401
+RL,Pave,,IR1,Lvl,Gilbert,Norm,1Fam,2Story,Gable,VinylSd,VinylSd,None,PConc,GasA,Y,New,Partial,58.0,14054,7,5,2006,2006,0.0,879,1863,3,219210,1197
+FV,Pave,Pave,IR1,Lvl,Somerst,Norm,TwnhsE,2Story,Gable,MetalSd,MetalSd,None,PConc,GasA,Y,New,Partial,35.0,4251,7,5,2006,2007,0.0,625,1250,2,164700,286
+RL,Pave,,IR1,Lvl,NWAmes,RRAn,1Fam,1Story,Gable,Plywood,Plywood,BrkFace,CBlock,GasA,Y,COD,Abnorml,82.0,11880,7,5,1978,1978,206.0,1271,1601,2,157000,1100
+RL,Pave,,IR1,Lvl,NAmes,Norm,1Fam,1Story,Gable,Wd Sdng,Wd Sdng,None,PConc,GasA,Y,WD,Normal,67.0952380952381,12493,4,5,1960,1960,0.0,1100,1100,1,141000,208
+RL,Pave,,Reg,Lvl,NridgHt,Norm,1Fam,2Story,Gable,VinylSd,VinylSd,Stone,PConc,GasA,Y,New,Partial,86.0,10562,8,5,2007,2007,300.0,1582,2161,3,325624,168
+RL,Pave,,Reg,Lvl,Blmngtn,Norm,TwnhsE,1Story,Gable,VinylSd,VinylSd,BrkFace,PConc,GasA,Y,WD,Normal,43.0,3182,8,5,2004,2005,16.0,1256,1269,2,192000,386
+RL,Pave,,IR1,Lvl,NoRidge,Norm,1Fam,2Story,Gable,VinylSd,VinylSd,BrkFace,PConc,GasA,Y,WD,Normal,78.0,12011,8,5,1998,1998,530.0,1086,1924,2,280000,360
