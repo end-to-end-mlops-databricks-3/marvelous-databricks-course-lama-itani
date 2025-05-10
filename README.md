@@ -19,23 +19,14 @@ In our examples, we use UV. Check out the documentation on how to install it: ht
 ### 🔐 Accessing private GitHub dependencies
 
 This project depends on a private repository called `marvelous`.
-The source is configured in `pyproject.toml` like this:
+The source is configured in `pyproject.toml` in project dependencies:
 
-```toml
-[tool.uv.sources]
-marvelous = { git = "https://x-access-token:${GIT_TOKEN}@github.com/end-to-end-mlops-databricks-3/marvelous.git@main" }
+```
+"marvelous@git+https://github.com/end-to-end-mlops-databricks-3/marvelous@0.1.0"
 ```
 
-#### Steps to configure:
-
-1. Go to [GitHub → Developer Settings → Personal Access Tokens](https://github.com/settings/tokens)
-2. Generate a new **classic** token (not fine-grained)
-3. Copy the token
-4. Add it to your environment:
-
-   ```bash
-   export GIT_TOKEN=your_token_here
-   ```
+This will work locally once you authernticate to GitHub using https, and your credentials are stored in the keychain.
+On Databricks, it works if you use Course cluster policy: it contains init script (init_script.sh) and the required environment variable.
 
 To create a new environment and create a lockfile, run:
 
