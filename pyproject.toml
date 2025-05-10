@@ -29,7 +29,11 @@ dev = ["databricks-connect==15.4.5",
        "ipykernel>=6.29.5, <7",
        "pip>=24.2",
        "pre-commit>=4.1.0, <5",
+<<<<<<< HEAD
        "pytest>=8.3.4, <9",
+=======
+       "pytest>=8.3.4, <9",            
+>>>>>>> 08790bf (bugfix)
     ]
 
 test = [
@@ -81,8 +85,12 @@ lint.ignore = [
     "D213", # multi-line-summary-second-line
     "E501", # line-too-long
     "C901", # too complex
+<<<<<<< HEAD
     "ERA001", # commented out code
     "D100" # missing docstring
+=======
+    "ERA001" # commented out code
+>>>>>>> 08790bf (bugfix)
 ]
 
 [tool.ruff.format]
