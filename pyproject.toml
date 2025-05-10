@@ -81,7 +81,8 @@ lint.ignore = [
     "D213", # multi-line-summary-second-line
     "E501", # line-too-long
     "C901", # too complex
-    "ERA001" # commented out code
+    "ERA001", # commented out code
+    "D100" # missing docstring
 ]
 
 [tool.ruff.format]
