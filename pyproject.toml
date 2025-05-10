@@ -29,9 +29,9 @@ dev = ["databricks-connect==15.4.5",
        "ipykernel>=6.29.5, <7",
        "pip>=24.2",
        "pre-commit>=4.1.0, <5",
-       "pytest>=8.3.4, <9",            
+       "pytest>=8.3.4, <9",
     ]
-    
+
 test = [
     "pre-commit>=4.1.0, <5",
     "delta-spark==3.3.0",
