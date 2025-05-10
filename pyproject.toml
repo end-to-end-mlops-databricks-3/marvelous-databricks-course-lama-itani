@@ -83,7 +83,7 @@ lint.ignore = [
     "E501", # line-too-long
     "C901", # too complex
     "ERA001", # commented out code
-    "D100" # missing docstring
+    "D100", # missing docstring
     "ERA001" # commented out code
 ]
 
